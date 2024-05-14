@@ -1,21 +1,21 @@
 html,
 body {
-	font-family: var(--font-family);
-	color: var(--main-color);
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 	font-size: 1rem;
-	line-height: 1.75;
 }
 
 .wrapper {
-	min-height: 100vh;
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 }
 
 .container {
-	max-width: 88.750em;
-	padding: 0 3.750em;
+	max-width: 88.75em;
+	padding: 0 3.75em;
 	margin: 0 auto;
 }
 
