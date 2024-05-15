@@ -32,14 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const heroHeight = document.querySelector('.hero');
+  const hero = document.querySelector('.hero');
   const heroVector = document.querySelector('.vector__icon');
-  if (heroHeight) {
-    const heroHalf = heroHeight.offsetHeight / 2;
+
+  if (hero) {
+    const heroHeight = hero.getBoundingClientRect().height;
+    const heroBottom = hero.getBoundingClientRect().bottom;
+    const heroHeightHalf = heroHeight / 2;
+
+    if (heroVector) {
+      if (heroHeightHalf > heroBottom) {
+        heroVector.classList.add('stopped');
+      } else {
+        heroVector.classList.remove('stopped');
+      }
+    }
 
     window.addEventListener('scroll', () => {
+      const heightBottomScroll = hero.getBoundingClientRect().bottom;
+
       if (heroVector) {
-        if (window.scrollY > heroHalf) {
+        if (heroHeightHalf > heightBottomScroll) {
           heroVector.classList.add('stopped');
         } else {
           heroVector.classList.remove('stopped');
