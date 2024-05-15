@@ -41,23 +41,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroHeightHalf = heroHeight / 2;
 
     if (heroVector) {
-      if (heroHeightHalf > heroBottom) {
-        heroVector.classList.add('stopped');
-      } else {
+      if (window.innerWidth > 1024) {
         heroVector.classList.remove('stopped');
-      }
-    }
 
-    window.addEventListener('scroll', () => {
-      const heightBottomScroll = hero.getBoundingClientRect().bottom;
-
-      if (heroVector) {
-        if (heroHeightHalf > heightBottomScroll) {
+        if (heroHeightHalf > heroBottom) {
           heroVector.classList.add('stopped');
         } else {
           heroVector.classList.remove('stopped');
         }
+
+        window.addEventListener('scroll', () => {
+          const heightBottomScroll = hero.getBoundingClientRect().bottom;
+
+          if (heroVector) {
+            if (heroHeightHalf > heightBottomScroll) {
+              heroVector.classList.add('stopped');
+            } else {
+              heroVector.classList.remove('stopped');
+            }
+          }
+        });
+      } else {
+        heroVector.classList.add('stopped');
       }
-    });
+    }
   }
 });
