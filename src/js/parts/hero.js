@@ -7,26 +7,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (logo) {
     setTimeout(function () {
-      logo.classList.add('active');
+      logo.classList.add('up');
     }, 100);
   }
 
   if (title) {
     setTimeout(function () {
-      title.classList.add('active');
+      title.classList.add('up');
     }, 250);
   }
 
   if (subtitle) {
     setTimeout(function () {
-      subtitle.classList.add('active');
+      subtitle.classList.add('up');
     }, 300);
   }
 
   if (box && vector) {
     setTimeout(function () {
-      box.classList.add('active');
-      vector.classList.add('active');
+      box.classList.add('up');
+      vector.classList.add('up');
     }, 350);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const heroHeight = document.querySelector('.hero');
+  const heroVector = document.querySelector('.vector__icon');
+  if (heroHeight) {
+    const heroHalf = heroHeight.offsetHeight / 2;
+
+    window.addEventListener('scroll', () => {
+      if (heroVector) {
+        if (window.scrollY > heroHalf) {
+          heroVector.classList.add('stopped');
+        } else {
+          heroVector.classList.remove('stopped');
+        }
+      }
+    });
   }
 });

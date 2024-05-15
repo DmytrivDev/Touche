@@ -1,8 +1,9 @@
-.hero__btn {
-	img {
-		animation: jump 5s infinite;
-		animation-delay: 1.5s;
-	}
+.vector__icon {
+	animation: jump 5s infinite;
+	animation-delay: 1.5s;
+}
+.vector__icon.stopped {
+	animation-play-state: paused;
 }
 
 @keyframes jump {

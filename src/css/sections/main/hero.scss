@@ -48,7 +48,7 @@
 			line-height: 1.5625rem;
 		}
 	}
-	&__vector {
+	&__btn-wrapp {
 	}
 	&__btn {
 		display: flex;
@@ -66,14 +66,14 @@
 .hero__box,
 .hero__btn {
 	opacity: 0;
-	transform: translateY(50%);
+	transform: translateY(80%);
 	transition: all 0.5s ease;
 }
-.hero__logo.active,
-.hero__title.active,
-.hero__sumtitle.active,
-.hero__box.active,
-.hero__btn.active {
+.hero__logo.up,
+.hero__title.up,
+.hero__sumtitle.up,
+.hero__box.up,
+.hero__btn.up {
 	opacity: 1;
 	transform: translateY(0);
 }
