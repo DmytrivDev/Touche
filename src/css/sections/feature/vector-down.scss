@@ -5,6 +5,11 @@
 .vector__icon.stopped {
 	animation-play-state: paused;
 }
+@media screen and (max-width: 1024px) {
+	.vector__icon {
+		animation-play-state: paused;
+	}
+}
 
 @keyframes jump {
 	0% {
