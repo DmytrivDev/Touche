@@ -1,0 +1,26 @@
+.footer {
+	padding-bottom: 1.5rem;
+	&__copy {
+		color: #b8b8b8;
+		font-size: 1.25rem;
+		font-weight: 300;
+		line-height: normal;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.footer {
+		padding-bottom: 1.25rem;
+		&__copy {
+			font-size: 0.9375rem;
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.footer {
+		&__copy {
+			font-size: 0.625rem;
+		}
+	}
+}

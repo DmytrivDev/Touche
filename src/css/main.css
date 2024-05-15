@@ -5,8 +5,12 @@
 @import url('./settings/general.scss');
 
 /* Header */
-@import url('./sections/header/header.scss');
-
+@import url('./sections/main/hero.scss');
+@import url('./sections/main/authorization.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
+
+/* Feature */
+@import url('./sections/feature/hero-bg.scss');
+@import url('./sections/feature/vector-down.scss');

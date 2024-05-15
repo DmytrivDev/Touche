@@ -1,0 +1,39 @@
+.hero__btn {
+	img {
+		animation: jump 5s infinite;
+		animation-delay: 1.5s;
+	}
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-0.938rem);
+	}
+	54% {
+		transform: translateY(0.563rem);
+	}
+	58% {
+		transform: translateY(-0.438rem);
+	}
+	62% {
+		transform: translateY(0.313rem);
+	}
+	66% {
+		transform: translateY(-0.188rem);
+	}
+	70% {
+		transform: translateY(0.125rem);
+	}
+	74% {
+		transform: translateY(-0.063rem);
+	}
+	80% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
