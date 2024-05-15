@@ -4,7 +4,7 @@
 @import url('./settings/variables.scss');
 @import url('./settings/general.scss');
 
-/* Header */
+/* Hero */
 @import url('./sections/main/hero.scss');
 @import url('./sections/main/authorization.scss');
 
@@ -13,4 +13,4 @@
 
 /* Feature */
 @import url('./sections/feature/hero-bg.scss');
-@import url('./sections/feature/vector-down.scss');
+@import url('./sections/feature/vector-animation.scss');
