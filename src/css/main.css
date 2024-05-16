@@ -17,3 +17,6 @@
 
 /* Forms */
 @import url('./sections/forms/survey-area.scss');
+@import url('./sections/forms/allergy.scss');
+@import url('./sections/forms/epilation.scss');
+@import url('./sections/forms/destination.scss');

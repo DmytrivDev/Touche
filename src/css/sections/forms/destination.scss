@@ -1,0 +1,9 @@
+.destination {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.6rem;
+	}
+	&__btn {
+	}
+}

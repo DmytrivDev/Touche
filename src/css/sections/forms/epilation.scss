@@ -1,9 +1,7 @@
-.survey-area {
+.epilation {
 	&__box {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		row-gap: 0.6rem;
-		justify-content: space-between;
 	}
 	&__btn {
 	}

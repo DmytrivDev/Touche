@@ -2,6 +2,14 @@ body {
 	/* Colors */
 }
 
+.form-choose {
+	// display: none;
+	display: block;
+}
+.form-choose.active {
+	display: block;
+}
+
 .form-title {
 	font-size: 2rem;
 	font-weight: 500;
@@ -17,12 +25,13 @@ body {
 	cursor: pointer;
 	width: fit-content;
 	display: flex;
-	align-items: center;
 	gap: 0.88rem;
 	input {
 		display: none;
 	}
 	span {
+		margin-top: 0.3rem;
+		flex-shrink: 0;
 		width: 1.25rem;
 		height: 1.25rem;
 		background-color: transparent;
@@ -37,6 +46,24 @@ body {
 	}
 }
 .input-field {
+	input {
+		border-radius: 3.75rem;
+		border: 0.063rem solid #000;
+		width: 28.625rem;
+		height: 2.75rem;
+		padding: 0 1.4rem;
+		font-family: Outfit;
+		font-size: 1.25rem;
+		font-weight: 300;
+		line-height: normal;
+		&::placeholder {
+			color: #c1c1c1;
+			font-family: Outfit;
+			font-size: 1.25rem;
+			font-weight: 300;
+			line-height: normal;
+		}
+	}
 }
 .form-btn-next {
 	position: absolute;

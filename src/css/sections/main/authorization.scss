@@ -8,7 +8,7 @@
 	&__box-form {
 		align-self: flex-start;
 		width: 33rem;
-		height: 32rem;
+		min-height: 32rem;
 		border-radius: 3.75rem;
 		border: 0.063rem solid #000;
 		overflow: hidden;
@@ -57,7 +57,7 @@
 
 		&__box-form {
 			width: 21.125rem;
-			height: 23.25rem;
+			min-height: 23.25rem;
 			border-radius: 2.5rem;
 			padding: 2.38rem 1.4rem 1.5rem 1.4rem;
 		}
@@ -96,7 +96,6 @@
 		}
 		&__box-form {
 			width: 100%;
-			height: auto;
 			min-height: 16.25rem;
 			border-radius: 1.875rem;
 			padding: 1.45rem 1.22rem 1.5rem 1.22rem;

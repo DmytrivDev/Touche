@@ -1,7 +1,7 @@
-.survey-area {
+.allergy {
 	&__box {
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(1, auto);
 		row-gap: 0.6rem;
 		justify-content: space-between;
 	}
