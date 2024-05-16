@@ -1,6 +1,6 @@
 const refs = {
   buttonNext: document.querySelectorAll('.form-btn-next'),
-  formCheck: document.querySelectorAll('.form-choose'),
+  formActive: document.querySelector('.form-active'),
 
   surveyArea: document.querySelector('.survey-area'),
   allergy: document.querySelector('.allergy'),
@@ -13,16 +13,11 @@ function nextStep() {
         evt.preventDefault();
 
         const button = evt.currentTarget;
-        console.log(button);
         const dataId = button.dataset.id;
-        console.log(dataId);
         const nextStep = document.getElementById(dataId);
-        console.log(nextStep);
 
-        // if (!button.classList.contains('disabled')) {
-        //   document.querySelector('.active').classList.remove('active');
-        //   nextStep.classList.add('nextStep');
-        // }
+        refs.formActive.classList.remove('form-active');
+        nextStep.classList.add('form-active');
       });
     });
   }
