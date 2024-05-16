@@ -1,25 +1,33 @@
 const refs = {
-  buttonNext: document.querySelector('.form-btn-next'),
+  buttonNext: document.querySelectorAll('.form-btn-next'),
   formCheck: document.querySelectorAll('.form-choose'),
 
   surveyArea: document.querySelector('.survey-area'),
   allergy: document.querySelector('.allergy'),
 };
 
-// refs.buttonNext.addEventListener('click', () => {
-//   for (let i = 0; i < refs.formCheck.length; i++) {
-//     const formCheck = refs.formCheck[i];
-//     if (formCheck.classList.contains('active')) {
-//       const nextFormCheck = refs.formCheck[i + 1];
-//       if (nextFormCheck) {
-//         formCheck.classList.remove('active');
-//         nextFormCheck.classList.add('active');
-//         return; // Вийти з циклу після зміни активного елемента
-//       }
-//     }
-//   }
-// });
+function nextStep() {
+  if (refs.buttonNext) {
+    refs.buttonNext.forEach(el => {
+      el.addEventListener('click', evt => {
+        evt.preventDefault();
 
+        const button = evt.currentTarget;
+        console.log(button);
+        const dataId = button.dataset;
+        console.log(dataId);
+        const nextStep = document.getElementById(dataId);
+        console.log(nextStep);
+
+        // if (!button.classList.contains('disabled')) {
+        //   document.querySelector('.active').classList.remove('active');
+        //   nextStep.classList.add('nextStep');
+        // }
+      });
+    });
+  }
+}
+nextStep();
 // function checkSurveyArea() {
 //   const inputs = document.querySelectorAll('.survey-area input[type="radio"]');
 

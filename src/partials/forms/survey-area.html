@@ -1,4 +1,4 @@
-<div class="survey-area form-choose active">
+<div class="survey-area form-choose active" id="survey-area">
   <fieldset>
     <legend class="form-title">
       Quelle(s) zone(s) de votre corps souhaitez-vous traiter?
@@ -36,7 +36,12 @@
       </label>
     </div>
   </fieldset>
-  <button type="button" class="survey-area__btn form-btn-next">
+  <button
+    type="button"
+    id="survey-area"
+    dataset="survey-area"
+    class="form-btn-next"
+  >
     <span>NEXT</span>
     <img src="/img/icons/vector-left.svg" alt="Vector next" />
   </button>
