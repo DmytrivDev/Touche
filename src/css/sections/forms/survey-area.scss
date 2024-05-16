@@ -1,0 +1,10 @@
+.survey-area {
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		row-gap: 0.5rem;
+		justify-content: space-between;
+	}
+	&__btn {
+	}
+}
