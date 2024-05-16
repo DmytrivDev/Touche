@@ -14,7 +14,7 @@ function nextStep() {
 
         const button = evt.currentTarget;
         console.log(button);
-        const dataId = button.dataset;
+        const dataId = button.dataset.id;
         console.log(dataId);
         const nextStep = document.getElementById(dataId);
         console.log(nextStep);
