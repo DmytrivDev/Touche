@@ -6,6 +6,7 @@
 		url("/img/hero/des/1.jpg");
 	background-position: center;
 	background-size: cover;
+	min-height: 100vh;
 }
 @media screen and (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
@@ -26,6 +27,7 @@
 				rgba(35, 27, 18, 0.65)
 			),
 			url("/img/hero/tabl/1.jpg");
+		min-height: auto;
 	}
 
 	@media screen and (min-device-pixel-ratio: 2),

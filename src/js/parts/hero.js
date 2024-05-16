@@ -23,10 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 
-  if (box && vector) {
+  if (box) {
     setTimeout(function () {
       box.classList.add('up');
-      vector.classList.add('up');
     }, 350);
+  }
+
+  if (vector) {
+    setTimeout(function () {
+      vector.classList.add('up');
+    }, 600);
   }
 });
