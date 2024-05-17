@@ -3,8 +3,27 @@
 		display: grid;
 		grid-template-columns: repeat(1, auto);
 		row-gap: 0.6rem;
-		justify-content: space-between;
 	}
 	&__btn {
+	}
+}
+@media screen and (max-width: 1024px) {
+	.allergy {
+		&__box {
+			row-gap: 0.35rem;
+		}
+		&__btn {
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.allergy {
+		&__box {
+			justify-content: center;
+			row-gap: 0.3rem;
+		}
+		&__btn {
+		}
 	}
 }

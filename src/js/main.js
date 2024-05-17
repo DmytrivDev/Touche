@@ -6,6 +6,7 @@ import { checkSurveyArea } from './parts/forms/survey-area';
 import { checkAllergy } from './parts/forms/allergy';
 import { checkEpilation } from './parts/forms/epilation';
 import './parts/forms/destination';
+import './parts/forms/reservation';
 
 import './parts/vector-animation';
 import { scrolling } from './parts/scrolling';

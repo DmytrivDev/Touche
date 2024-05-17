@@ -8,3 +8,23 @@
 	&__btn {
 	}
 }
+@media screen and (max-width: 1024px) {
+	.survey-area {
+		&__box {
+			row-gap: 0.35rem;
+		}
+		&__btn {
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.survey-area {
+		&__box {
+			row-gap: 0.3rem;
+			justify-content: space-evenly;
+		}
+		&__btn {
+		}
+	}
+}

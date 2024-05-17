@@ -20,3 +20,5 @@
 @import url('./sections/forms/allergy.scss');
 @import url('./sections/forms/epilation.scss');
 @import url('./sections/forms/destination.scss');
+@import url('./sections/forms/reservation.scss');
+@import url('./sections/forms/submit.scss');
