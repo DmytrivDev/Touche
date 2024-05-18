@@ -2,6 +2,10 @@
 	&__box {
 		display: flex;
 		flex-direction: column;
+	}
+	&__box-inputs {
+		display: flex;
+		flex-direction: column;
 		row-gap: 0.6rem;
 	}
 	&__check {
@@ -39,7 +43,7 @@
 }
 @media screen and (max-width: 1024px) {
 	.destination {
-		&__box {
+		&__box-inputs {
 			row-gap: 0.25rem;
 		}
 		&__check {
@@ -57,15 +61,11 @@
 			font-size: 0.625rem;
 			line-height: 0.625rem;
 		}
-		&__btn {
-		}
 	}
 }
 
 @media screen and (max-width: 760px) {
 	.destination {
-		&__box {
-		}
 		&__check {
 			margin-top: 0.88rem;
 			margin-bottom: 2.5rem;
@@ -79,8 +79,6 @@
 		&__text {
 			font-size: 0.5625rem;
 			line-height: 0.5625rem;
-		}
-		&__btn {
 		}
 	}
 }

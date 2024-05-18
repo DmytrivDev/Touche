@@ -1,6 +1,6 @@
 import './parts/hero';
-
-import { nextStep } from './parts/button-next';
+import './parts/vector-animation';
+import { scrolling } from './parts/scrolling';
 
 import { checkSurveyArea } from './parts/forms/survey-area';
 import { checkAllergy } from './parts/forms/allergy';
@@ -8,13 +8,14 @@ import { checkEpilation } from './parts/forms/epilation';
 import './parts/forms/destination';
 import './parts/forms/reservation';
 
-import './parts/vector-animation';
-import { scrolling } from './parts/scrolling';
+import './parts/submit';
 
-nextStep();
+import { nextStep } from './parts/button-next';
+
+scrolling();
 
 checkSurveyArea();
 checkAllergy();
 checkEpilation();
 
-scrolling();
+nextStep();

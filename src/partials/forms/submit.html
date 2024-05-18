@@ -1,30 +1,37 @@
 <div id="submit" class="submit form-block">
   <fieldset>
     <div class="submit__box">
-      <label class="input-field">
-        <input type="text" name="submit-name" placeholder="Nom*" />
-      </label>
-      <label class="input-field">
-        <input
-          type="text"
-          name="submit-surname"
-          placeholder="Nom de famille*"
-        />
-      </label>
-      <label class="input-field">
-        <input type="email" name="submit-email" placeholder="E-mail*" />
-      </label>
-      <label class="input-field">
-        <input type="number" name="submit-number" placeholder="Téléphone*" />
-      </label>
-      <label>
-        <textarea
-          rows="2"
-          class="submit__textarea"
-          name="submit-message"
-          placeholder="Quel est le meilleur moment pour vous contacter pour confirmer votre rendez-vous?"
-        ></textarea>
-      </label>
+      <div class="submit__box-inputs">
+        <label class="input-field">
+          <input type="text" name="submit-name" placeholder="Nom*" />
+        </label>
+
+        <label class="input-field">
+          <input
+            type="text"
+            name="submit-surname"
+            placeholder="Nom de famille*"
+          />
+        </label>
+
+        <label class="input-field">
+          <input type="email" name="submit-email" placeholder="E-mail*" />
+        </label>
+
+        <label class="input-field">
+          <input type="number" name="submit-number" placeholder="Téléphone*" />
+        </label>
+
+        <label>
+          <textarea
+            rows="2"
+            class="submit__textarea"
+            name="submit-message"
+            placeholder="Quel est le meilleur moment pour vous contacter pour confirmer votre rendez-vous?"
+          ></textarea>
+        </label>
+      </div>
+
       <label class="submit__check">
         <input
           type="checkbox"
@@ -44,7 +51,7 @@ je respecte votre temps et je comprends que c'est injuste envers les autres»"
       </label>
     </div>
   </fieldset>
-  <button type="submit" data-id="form-submit" class="submit__btn form-submit">
-    Obtenez une opportunité unique maintenant
+  <button type="submit" data-id="completion" class="submit__btn form-submit">
+    Obtenez une opportunité <br />unique maintenant
   </button>
 </div>

@@ -1,0 +1,56 @@
+.completion {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		gap: 1.6rem;
+	}
+	&__title {
+		text-align: center;
+		font-size: 3.125rem;
+		font-weight: 500;
+		line-height: 1.25rem;
+	}
+	&__text {
+		text-align: center;
+		font-size: 1.875rem;
+		font-weight: 500;
+		line-height: 1.875rem;
+		width: 19.9375rem;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.completion {
+		&__box {
+			gap: 1.13rem;
+		}
+		&__title {
+			font-size: 2.5rem;
+			line-height: 1.25rem;
+		}
+		&__text {
+			font-size: 1.25rem;
+			line-height: 1.25rem;
+			width: 17.25rem;
+		}
+	}
+}
+@media screen and (max-width: 760px) {
+	.completion {
+		&__box {
+			gap: 0.8rem;
+		}
+		&__title {
+			font-size: 1.875rem;
+		}
+		&__text {
+			font-size: 0.9375rem;
+			line-height: 0.9375rem;
+			width: 12.4375rem;
+		}
+	}
+}
