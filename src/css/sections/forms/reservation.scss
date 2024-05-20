@@ -60,12 +60,20 @@
 	border-radius: 0 !important;
 	box-shadow: none !important;
 	min-width: auto !important;
-	max-width: 14.4375rem !important;
+	max-width: 100% !important;
 	width: 14.4375rem !important;
-	padding: 0.7rem 0.5rem !important;
-	padding-top: 0 !important;
+	padding: 0 0.5rem 0.7rem 0.5rem !important;
+}
+.flatpickr-current-month {
+	height: 2.125rem !important;
+	width: auto !important;
+	padding-top: 0.468rem !important;
+	font-size: 1.25rem !important;
+	display: flex !important;
+	align-items: center !important;
 }
 .flatpickr-monthDropdown-months {
+	margin-left: 1rem !important;
 	color: #000 !important;
 	font-size: 1.25rem !important;
 	font-weight: 400 !important;
@@ -78,10 +86,20 @@
 	font-weight: 400 !important;
 	line-height: normal !important;
 }
-.flatpickr-current-month {
-	height: 2.125rem !important;
-	padding-top: 0.468rem !important;
-	font-size: 1.25rem !important;
+.numInputWrapper {
+	display: block !important;
+}
+.flatpickr-current-month .numInputWrapper {
+	width: 0 !important;
+}
+.numInputWrapper input {
+	width: auto !important;
+}
+.arrowUp {
+	display: none !important;
+}
+.arrowDown {
+	display: none !important;
 }
 .flatpickr-months {
 	display: flex !important;
@@ -90,10 +108,6 @@
 }
 .flatpickr-month {
 	height: 2.125rem !important;
-}
-.flatpickr-months .flatpickr-next-month {
-	height: 2.125rem !important;
-	padding: 0.625rem !important;
 }
 .flatpickr-weekday {
 	text-transform: capitalize !important;
@@ -114,7 +128,6 @@
 	width: auto !important;
 	display: grid !important;
 	grid-template-columns: repeat(7, auto) !important;
-	grid-template-rows: repeat(5, 1fr) !important;
 }
 .flatpickr-days {
 	display: block !important;
@@ -133,6 +146,14 @@
 	background: #d1bdaf !important;
 	color: #000 !important;
 	border-color: #d1bdaf !important;
+}
+.flatpickr-prev-month {
+	height: 2.125rem !important;
+	padding: 0.625rem !important;
+}
+.flatpickr-next-month {
+	height: 2.125rem !important;
+	padding: 0.625rem !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -155,8 +176,50 @@
 			}
 		}
 	}
+	.flatpickr-calendar {
+		width: 10.9375rem !important;
+	}
+	.flatpickr-monthDropdown-months {
+		font-size: 0.9375rem !important;
+		margin-left: 0.3rem !important;
+	}
+	.cur-year {
+		font-size: 0.9375rem !important;
+	}
+	.flatpickr-weekday {
+		font-size: 0.625rem !important;
+	}
+	.flatpickr-day {
+		width: 1.0625rem !important;
+		height: 1.0625rem !important;
+		font-size: 0.625rem !important;
+	}
+	.flatpickr-prev-month {
+	}
+	.flatpickr-next-month {
+	}
 }
 @media screen and (max-width: 760px) {
 	.reservation {
+		&__box {
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
+			gap: 1rem;
+			margin-bottom: 4rem;
+		}
+		&__time {
+			gap: 0.25rem;
+			p {
+				font-size: 0.9375rem;
+			}
+			label {
+				span {
+					width: 2.36288rem;
+					height: 0.72088rem;
+					font-size: 0.625rem;
+				}
+			}
+		}
 	}
 }
