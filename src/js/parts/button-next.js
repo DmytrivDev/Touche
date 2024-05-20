@@ -1,4 +1,4 @@
-const buttonNext = document.querySelectorAll('.form-btn-next');
+const buttonNext = document.querySelectorAll('.btn-next');
 
 export function nextStep() {
   if (buttonNext) {

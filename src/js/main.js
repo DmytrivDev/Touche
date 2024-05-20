@@ -19,3 +19,18 @@ checkAllergy();
 checkEpilation();
 
 nextStep();
+
+// const form = document.getElementById('submitForm');
+
+// form.addEventListener('submit', event => {
+//   event.preventDefault();
+
+//   const formData = new FormData(form);
+//   const formValues = {};
+
+//   formData.forEach((value, key) => {
+//     formValues[key] = value;
+//   });
+
+//   console.log('Form Data:', formValues);
+// });
