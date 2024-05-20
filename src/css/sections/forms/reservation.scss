@@ -1,8 +1,145 @@
 .reservation {
 	&__box {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 4.5rem;
 	}
 	&__date {
 	}
+	&__time-box {
+		display: flex;
+		gap: 2.25rem;
+	}
+	&__time {
+		align-self: start;
+		display: flex;
+		gap: 0.2rem;
+		flex-direction: column;
+		align-items: center;
+		p {
+			font-size: 1.25rem;
+			line-height: normal;
+		}
+		label {
+			input {
+				display: none;
+			}
+			span {
+				cursor: pointer;
+				border-radius: 3.75rem;
+				border: 0.063rem solid #000;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 3.6875rem;
+				height: 1.125rem;
+				font-size: 0.75rem;
+				font-weight: 500;
+				line-height: normal;
+				transition: 150ms all;
+				&:hover {
+					background-color: #bebebe;
+				}
+			}
+			input:checked + span {
+				background-color: #d1bdaf;
+			}
+		}
+	}
 	&__btn {
+	}
+}
+
+.flatpickr {
+	input {
+		display: none;
+	}
+}
+.flatpickr-calendar {
+	background: rgba(209, 189, 175, 0.2) !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	min-width: auto !important;
+	max-width: 14.4375rem !important;
+	width: 14.4375rem !important;
+	padding: 0.7rem 0.5rem !important;
+	padding-top: 0 !important;
+}
+.flatpickr-monthDropdown-months {
+	color: #000 !important;
+	font-size: 1.25rem !important;
+	font-weight: 400 !important;
+	line-height: normal !important;
+	text-transform: capitalize !important;
+}
+.cur-year {
+	color: #000 !important;
+	font-size: 1.25rem !important;
+	font-weight: 400 !important;
+	line-height: normal !important;
+}
+.flatpickr-current-month {
+	height: 2.125rem !important;
+	padding-top: 0.468rem !important;
+	font-size: 1.25rem !important;
+}
+.flatpickr-months {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+.flatpickr-month {
+	height: 2.125rem !important;
+}
+.flatpickr-months .flatpickr-next-month {
+	height: 2.125rem !important;
+	padding: 0.625rem !important;
+}
+.flatpickr-weekday {
+	text-transform: capitalize !important;
+	color: #000 !important;
+	font-size: 0.75rem !important;
+	font-weight: 400 !important;
+	line-height: normal !important;
+}
+.flatpickr-innerContainer {
+	display: block !important;
+}
+.flatpickr-rContainer {
+	display: block !important;
+}
+.dayContainer {
+	min-width: auto !important;
+	max-width: 100% !important;
+	width: auto !important;
+	display: grid !important;
+	grid-template-columns: repeat(7, auto) !important;
+	grid-template-rows: repeat(5, 1fr) !important;
+}
+.flatpickr-days {
+	display: block !important;
+	width: auto !important;
+}
+.flatpickr-day {
+	width: 1.4375rem !important;
+	height: 1.4375rem !important;
+	font-size: 0.75rem !important;
+	line-height: normal !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.flatpickr-day.selected {
+	background: #d1bdaf !important;
+	color: #000 !important;
+	border-color: #d1bdaf !important;
+}
+
+@media screen and (max-width: 1024px) {
+	.reservation {
+	}
+}
+@media screen and (max-width: 760px) {
+	.reservation {
 	}
 }
