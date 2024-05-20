@@ -137,6 +137,23 @@
 
 @media screen and (max-width: 1024px) {
 	.reservation {
+		&__time-box {
+			gap: 1.44rem;
+		}
+		&__time {
+			gap: 0.12rem;
+			p {
+				font-size: 0.9375rem;
+			}
+			label {
+				span {
+					border: 0.044rem solid #000;
+					width: 2.36288rem;
+					height: 0.72088rem;
+					font-size: 0.625rem;
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 760px) {
