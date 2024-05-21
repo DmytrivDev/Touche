@@ -23,40 +23,24 @@ export function destinationForm() {
     let formIsValid = true;
 
     if (isEmpty(telName.value.trim())) {
-      telName.classList.add('error');
       formIsValid = false;
-    } else {
-      telName.classList.remove('error');
     }
 
     if (isEmpty(telSurname.value.trim())) {
-      telSurname.classList.add('error');
       formIsValid = false;
-    } else {
-      telSurname.classList.remove('error');
     }
 
     const telValue = telInput.value.replace(/[^\d+]/g, '');
-
     if (!isMobilePhone(telValue, 'en-CA')) {
-      telInput.classList.add('error');
       formIsValid = false;
-    } else {
-      telInput.classList.remove('error');
     }
 
     if (!isEmail(emailInput.value.trim())) {
-      emailInput.classList.add('error');
       formIsValid = false;
-    } else {
-      emailInput.classList.remove('error');
     }
 
     if (!checkbox.checked) {
-      checkbox.classList.add('error');
       formIsValid = false;
-    } else {
-      checkbox.classList.remove('error');
     }
 
     btnNext.disabled = !formIsValid;
@@ -67,11 +51,62 @@ export function destinationForm() {
     }
   }
 
+  function validateField(field) {
+    if (field === telName) {
+      if (isEmpty(telName.value.trim())) {
+        telName.classList.add('error');
+      } else {
+        telName.classList.remove('error');
+      }
+    }
+
+    if (field === telSurname) {
+      if (isEmpty(telSurname.value.trim())) {
+        telSurname.classList.add('error');
+      } else {
+        telSurname.classList.remove('error');
+      }
+    }
+
+    if (field === telInput) {
+      const telValue = telInput.value.replace(/[^\d+]/g, '');
+      if (!isMobilePhone(telValue, 'en-CA')) {
+        telInput.classList.add('error');
+      } else {
+        telInput.classList.remove('error');
+      }
+    }
+
+    if (field === emailInput) {
+      if (!isEmail(emailInput.value.trim())) {
+        emailInput.classList.add('error');
+      } else {
+        emailInput.classList.remove('error');
+      }
+    }
+
+    if (field === checkbox) {
+      if (!checkbox.checked) {
+        checkbox.classList.add('error');
+      } else {
+        checkbox.classList.remove('error');
+      }
+    }
+
+    validateForm();
+  }
+
   inputs.forEach(input => {
     input.addEventListener('input', validateForm);
+    input.addEventListener('blur', () => validateField(input));
   });
 
-  checkbox.addEventListener('change', validateForm);
+  checkbox.addEventListener('change', () => {
+    validateForm();
+    validateField(checkbox);
+  });
 
   validateForm();
 }
+
+document.addEventListener('DOMContentLoaded', destinationForm);
