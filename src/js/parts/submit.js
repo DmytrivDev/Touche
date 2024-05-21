@@ -1,8 +1,10 @@
 import isEmail from 'validator/lib/isEmail';
 import isMobilePhone from 'validator/lib/isMobilePhone';
 import isEmpty from 'validator/lib/isEmpty';
-import axios from 'axios';
 import IMask from 'imask';
+import axios from 'axios';
+
+import { handleSubmitBtn } from './button-next';
 
 export const formFunc = async () => {
   const telInputs = document.querySelectorAll('input[type="tel"]');
@@ -30,11 +32,9 @@ export const formFunc = async () => {
     }
   }
 
-  const forms = document.querySelectorAll('.submitForm');
+  const form = document.querySelector('.submitForm');
 
-  forms.forEach(form => {
-    form.addEventListener('submit', submitForm);
-  });
+  form.addEventListener('submit', submitForm);
 
   function submitForm(e) {
     e.preventDefault();
@@ -110,3 +110,23 @@ export const formFunc = async () => {
     });
   }
 };
+
+const form = document.getElementById('submitForm');
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  const formValues = {};
+
+  formData.forEach((value, key) => {
+    if (!formValues[key]) {
+      formValues[key] = [];
+    }
+    formValues[key].push(value);
+  });
+
+  handleSubmitBtn();
+
+  console.log('Form Data:', formValues);
+});

@@ -22,3 +22,21 @@ export function nextStep() {
     });
   }
 }
+
+const formSubmitBtn = document.querySelector('.form-submit');
+
+export function handleSubmitBtn() {
+  if (formSubmitBtn) {
+    const dataId = formSubmitBtn.dataset.id;
+    const nextStep = document.getElementById(dataId);
+
+    if (!formSubmitBtn.classList.contains('disabled')) {
+      const formActive = document.querySelector('.form-active');
+
+      if (formActive) {
+        formActive.classList.remove('form-active');
+        nextStep.classList.add('form-active');
+      }
+    }
+  }
+}
