@@ -4,6 +4,11 @@ import isEmail from 'validator/lib/isEmail';
 import IMask from 'imask';
 
 export function destinationForm() {
+  const destinationDiv = document.getElementById('destination');
+  if (!destinationDiv) {
+    return;
+  }
+
   const inputs = document.querySelectorAll('.destination__box-inputs input');
 
   const telName = document.getElementById('destination-name');

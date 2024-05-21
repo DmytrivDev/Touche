@@ -21,3 +21,54 @@ style.innerHTML = `
   `;
 document.head.appendChild(style);
 
+export function reservationForm() {
+  const reservationDiv = document.getElementById('reservation');
+  if (!reservationDiv) {
+    return;
+  }
+
+  const dateInput = document.getElementById('reservation-date');
+  const timeInputs = document.querySelectorAll(
+    'input[name="reservation-time"]'
+  );
+
+  const btnNext = document.querySelector('.reservation__btn');
+
+  let formIsValid = true;
+
+  if (!dateInput.value.trim()) {
+    formIsValid = false;
+  }
+
+  let timeSelected = false;
+  timeInputs.forEach(input => {
+    if (input.checked) {
+      timeSelected = true;
+    }
+  });
+
+  if (!timeSelected) {
+    formIsValid = false;
+  }
+
+  btnNext.disabled = !formIsValid;
+  if (formIsValid) {
+    btnNext.classList.remove('disabled');
+  } else {
+    btnNext.classList.add('disabled');
+  }
+}
+
+const reservationDiv = document.getElementById('reservation');
+if (reservationDiv) {
+  const dateInput = document.getElementById('reservation-date');
+  const timeInputs = document.querySelectorAll(
+    'input[name="reservation-time"]'
+  );
+
+  dateInput.addEventListener('change', reservationForm);
+
+  timeInputs.forEach(input => {
+    input.addEventListener('change', reservationForm);
+  });
+}
