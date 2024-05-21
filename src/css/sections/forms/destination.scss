@@ -16,6 +16,9 @@
 		gap: 0.88rem;
 		input {
 			display: none;
+			&.error + span {
+				border-color: #d41d1d;
+			}
 		}
 		span {
 			margin-top: 0.3rem;

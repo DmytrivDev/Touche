@@ -1,4 +1,4 @@
-<div id="destination" class="destination form-block">
+<div id="destination" class="destination form-block form-active">
   <fieldset>
     <legend class="form-title">
       Avez-vous déjà fait une épilation au laser?
@@ -6,22 +6,34 @@
     <div class="destination__box">
       <div class="destination__box-inputs">
         <label class="input-field">
-          <input type="text" name="destination-name" placeholder="Nom*" />
+          <input
+            type="text"
+            id="destination-name"
+            name="destination-name"
+            placeholder="Nom*"
+          />
         </label>
         <label class="input-field">
           <input
             type="text"
+            id="destination-surname"
             name="destination-surname"
             placeholder="Nom de famille*"
           />
         </label>
         <label class="input-field">
-          <input type="email" name="destination-email" placeholder="E-mail*" />
+          <input
+            type="email"
+            id="destination-email"
+            name="destination-email"
+            placeholder="E-mail*"
+          />
         </label>
         <label class="input-field">
           <input
-            type="number"
-            name="destination-number"
+            type="tel"
+            id="destination-tel"
+            name="destination-tel"
             placeholder="Téléphone*"
           />
         </label>
@@ -29,6 +41,7 @@
       <label class="destination__check">
         <input
           type="checkbox"
+          id="destination-check"
           name="destination-check"
           value="En cochant le bouton, vous nous autorisez à vous envoyer des SMS et des e-mails contenant des informations sur les mises à jour et les promotions"
         />

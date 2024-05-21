@@ -10,7 +10,7 @@ export const formFunc = async () => {
   const telInputs = document.querySelectorAll('input[type="tel"]');
 
   const telMaskOptions = {
-    mask: '+38 (\\000) 000 00 00',
+    mask: '+1 (000) 000-0000',
   };
 
   telInputs?.forEach(input => {

@@ -54,12 +54,16 @@ body {
 		font-size: 1.25rem;
 		font-weight: 300;
 		line-height: normal;
+		transition: 150ms all;
 		&::placeholder {
 			color: #c1c1c1;
 			font-family: Outfit;
 			font-size: 1.25rem;
 			font-weight: 300;
 			line-height: normal;
+		}
+		&.error {
+			border-color: #d41d1d;
 		}
 	}
 }
