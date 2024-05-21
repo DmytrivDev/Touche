@@ -108,5 +108,3 @@ export function destinationForm() {
 
   validateForm();
 }
-
-document.addEventListener('DOMContentLoaded', destinationForm);
