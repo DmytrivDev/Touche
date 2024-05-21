@@ -1,6 +1,6 @@
 import './parts/hero';
 import './parts/vector-animation';
-import { scrolling } from './parts/scrolling';
+import './parts/scrolling';
 
 import { checkSurveyArea } from './parts/forms/survey-area';
 import { checkAllergy } from './parts/forms/allergy';
@@ -12,8 +12,6 @@ import { submitForm } from './parts/forms/submit';
 import './parts/submit-form';
 
 import { nextStep } from './parts/button-next';
-
-scrolling();
 
 checkSurveyArea();
 checkAllergy();
