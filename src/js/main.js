@@ -7,7 +7,9 @@ import { checkAllergy } from './parts/forms/allergy';
 import { checkEpilation } from './parts/forms/epilation';
 import { destinationForm } from './parts/forms/destination';
 import { reservationForm } from './parts/forms/reservation';
-import './parts/submit';
+import { submitForm } from './parts/forms/submit';
+
+import './parts/submit-form';
 
 import { nextStep } from './parts/button-next';
 
@@ -18,5 +20,6 @@ checkAllergy();
 checkEpilation();
 destinationForm();
 reservationForm();
+submitForm();
 
 nextStep();
