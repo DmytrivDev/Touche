@@ -9,15 +9,12 @@ export function submitForm() {
     return;
   }
 
-  const inputs = document.querySelectorAll(
-    '.submit__box-inputs input, .submit__textarea'
-  );
+  const inputs = document.querySelectorAll('.submit__box-inputs input');
 
   const nameInput = document.getElementById('submit-name');
   const surnameInput = document.getElementById('submit-surname');
   const emailInput = document.getElementById('submit-email');
   const telInput = document.getElementById('submit-tel');
-  const textarea = document.getElementById('submit-textarea');
   const checkbox = document.getElementById('submit-check');
 
   const btnSubmit = document.querySelector('.submit__btn');
@@ -44,10 +41,6 @@ export function submitForm() {
     }
 
     if (!isEmail(emailInput.value.trim())) {
-      formIsValid = false;
-    }
-
-    if (isEmpty(textarea.value.trim())) {
       formIsValid = false;
     }
 
@@ -94,14 +87,6 @@ export function submitForm() {
         emailInput.classList.add('error');
       } else {
         emailInput.classList.remove('error');
-      }
-    }
-
-    if (field === textarea) {
-      if (isEmpty(textarea.value.trim())) {
-        textarea.classList.add('error');
-      } else {
-        textarea.classList.remove('error');
       }
     }
 

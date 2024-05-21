@@ -27,6 +27,12 @@ body {
 	gap: 0.88rem;
 	input {
 		display: none;
+		&:checked + span {
+			background-color: #d1bdaf;
+		}
+		&:hover + span {
+			box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		}
 	}
 	span {
 		margin-top: 0.3rem;
@@ -38,9 +44,6 @@ body {
 		border: 0.063rem solid #000;
 		overflow: hidden;
 		transition: 150ms all;
-	}
-	input:checked + span {
-		background-color: #d1bdaf;
 	}
 }
 .input-field {
@@ -61,6 +64,10 @@ body {
 			font-size: 1.25rem;
 			font-weight: 300;
 			line-height: normal;
+		}
+		&:focus {
+			border-color: #bebebe;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 		}
 		&.error {
 			border-color: #d41d1d;
@@ -91,6 +98,7 @@ body {
 	}
 	&:hover {
 		background-color: #e6c4ae;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 	}
 	&:hover img {
 		transform: translateX(0.5rem);
@@ -104,6 +112,7 @@ body {
 	}
 	&:hover {
 		background-color: #bbbbbb;
+		box-shadow: none;
 	}
 	&:hover img {
 		transform: translateX(0);
@@ -129,6 +138,7 @@ body {
 	transition: 150ms all;
 	&:hover {
 		background-color: #e6c4ae;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 	}
 }
 .form-submit.disabled {
@@ -137,6 +147,7 @@ body {
 	color: #686565;
 	&:hover {
 		background-color: #bbbbbb;
+		box-shadow: none;
 	}
 }
 

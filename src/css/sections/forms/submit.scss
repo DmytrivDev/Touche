@@ -18,16 +18,16 @@
 		font-weight: 300;
 		line-height: 1.25rem;
 		transition: 150ms all;
-		&.error {
-			border-color: #d41d1d;
-		}
-
 		&::placeholder {
 			color: #c1c1c1;
 			font-family: Outfit;
 			font-size: 1.25rem;
 			font-weight: 300;
 			line-height: 1.25rem;
+		}
+		&:focus {
+			border-color: #bebebe;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 		}
 
 		&::-webkit-scrollbar {
