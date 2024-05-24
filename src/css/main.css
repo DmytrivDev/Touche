@@ -12,7 +12,6 @@
 @import url('./sections/footer/footer.scss');
 
 /* Feature */
-@import url('./sections/feature/hero-bg.scss');
 @import url('./sections/feature/vector-animation.scss');
 
 /* Forms */
