@@ -123,7 +123,8 @@
 .hero__title,
 .hero__sumtitle,
 .hero__box,
-.hero__btn {
+.hero__btn,
+.hero__address {
   opacity: 0;
   transform: translateY(80%);
   transition: all 0.5s ease;
@@ -132,7 +133,8 @@
 .hero__title.up,
 .hero__sumtitle.up,
 .hero__box.up,
-.hero__btn.up {
+.hero__btn.up,
+.hero__address.up {
   opacity: 1;
   transform: translateY(0);
 }

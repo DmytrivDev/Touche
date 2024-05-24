@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const logo = document.querySelector('.hero__logo');
+  const address = document.querySelector('.hero__address');
   const title = document.querySelector('.hero__title');
   const subtitle = document.querySelector('.hero__sumtitle');
   const box = document.querySelector('.hero__box');
@@ -8,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (logo) {
     setTimeout(function () {
       logo.classList.add('up');
+    }, 100);
+  }
+
+  if (address) {
+    setTimeout(function () {
+      address.classList.add('up');
     }, 100);
   }
 
