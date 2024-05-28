@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 export async function sendSMS(phoneNumber, message) {
-  const apiKey = 'YOUR_TELESIGN_API_KEY';
-  const customerId = 'YOUR_TELESIGN_CUSTOMER_ID';
+  const apiKey = 'KEY';
+  const customerId = 'CUSTOMER_ID';
   const url = `https://rest-api.telesign.com/v1/messaging`;
 
   const data = {

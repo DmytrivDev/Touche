@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { handleSubmitBtn } from './button-next';
 import { sendSMS } from './send-sms';
 
