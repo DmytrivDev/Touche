@@ -21,9 +21,9 @@ form.addEventListener('submit', async event => {
   console.log('Form Data:', formValues);
 
   const phoneNumber = formValues['submit-number'][0];
-  const phoneName = formValues['submit-name'][0];
+  const userName = formValues['submit-name'][0];
 
-  const message = `Bonjour ${phoneName} :)
+  const message = `Bonjour ${userName} :)
 Pour vous - 70% de réduction
 pour votre première séance d'épilation laser chez Touche Laser Clinique!
 Si vous ne souhaitez pas poursuivre la conversation, écrivez STOP
