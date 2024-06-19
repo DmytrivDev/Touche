@@ -20,7 +20,7 @@ form.addEventListener('submit', async event => {
 
   console.log('Form Data:', formValues);
 
-  const phoneNumber = formValues['submit-number'][0];
+  const phoneNumber = formValues['submit-tel'][0];
   const userName = formValues['submit-name'][0];
 
   const message = `Bonjour ${userName} :)
